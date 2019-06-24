@@ -1,0 +1,46 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "env": {
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "off",
+    "quotes": [
+      "warn",
+      "double"
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "keyword-spacing": [
+      "error", {
+        "before": true,
+        "after": true
+      }
+    ],
+    "space-before-blocks": [
+      "error", {
+        "functions": "always",
+        "keywords": "always",
+        "classes": "always"
+      }
+    ],
+    "space-before-function-paren": [
+      "error", {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "prefer-const": [
+      "error", {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ]
+  }
+}

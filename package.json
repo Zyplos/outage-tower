@@ -1,0 +1,17 @@
+{
+  "name": "discord-hackweek",
+  "version": "0.0.1",
+  "description": "Flips a coin.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "author": "Zyplos",
+  "dependencies": {
+    "discord.js": "git://github.com/discordjs/discord.js.git",
+    "dotenv": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
