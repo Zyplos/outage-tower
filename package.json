@@ -1,6 +1,6 @@
 {
   "name": "discord-hackweek",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Flips a coin.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "author": "Zyplos",
   "dependencies": {
-    "discord.js": "git://github.com/discordjs/discord.js.git",
+    "discord.js": "^11.5.1",
     "dotenv": "^8.0.0"
   },
   "devDependencies": {

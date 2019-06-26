@@ -7,15 +7,20 @@ client.commands = {};
 
 client.config = {
     prefix: "m;",
-    token: process.env.token
+    token: process.env.token,
+    botColor: 0xff3e3e
+};
+
+client.games = {
+    devspace: "You are being rate limited."
 };
 
 client.on("ready", () => {
     console.log("[LOG] Client ready.");
-    client.user.setActivity("your server • m;help", {
+    client.user.setActivity("Family Guy • m;ping", {
             type: "WATCHING"
         })
-        .then(() => client.user.setStatus("online"))
+        .then(() => client.user.setStatus("dnd"))
         .catch(console.error);
 
     const testFolder = "./commands/";
@@ -41,6 +46,16 @@ client.on("message", msg => {
     if (!exec) return;
 
     exec.run(client, msg);
+});
+
+client.on("error", error => {
+    console.error("DISCORD SENT AN ERROR ========================");
+    console.log(error);
+});
+
+client.on("rateLimit", rateLimitInfo => {
+    console.error("you are being rate limited. ========================");
+    console.log(rateLimitInfo);
 });
 
 client.login(client.config.token);
