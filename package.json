@@ -1,10 +1,11 @@
 {
-  "name": "discord-hackweek",
-  "version": "0.0.2",
-  "description": "Flips a coin.",
+  "name": "outage-tower",
+  "version": "1.0.0",
+  "description": "A Discord game thing made during Discord Hackweek.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "author": "Zyplos",
   "dependencies": {
